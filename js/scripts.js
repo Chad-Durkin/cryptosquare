@@ -16,8 +16,8 @@ var arraySquareSize = function(input) {
 
 var setupArray = function(input, squareSize, fullLength) {
   var clonedStringArray = input.split("");
-  console.log(clonedStringArray);
   var primaryArray = new Array(parseInt(squareSize));
+
   for(var index = 0; index < squareSize; index++)
   {
     primaryArray[index] = new Array(parseInt(squareSize));
@@ -32,21 +32,16 @@ var setupArray = function(input, squareSize, fullLength) {
       primaryArray[jdex][index] = clonedStringArray[stringLocation];
       stringLocation++;
     }
-
   }
 
   for(var index = 0; index < squareSize; index++)
   {
     primaryArray[index] = primaryArray[index].join("");
   }
-  console.log(" before " + primaryArray);
 
   primaryArray = primaryArray.join(" ");
 
-  console.log("after " + primaryArray);
-
   return primaryArray;
-
 };
 
 $(function(){
