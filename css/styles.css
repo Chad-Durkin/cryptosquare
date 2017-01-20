@@ -1,0 +1,17 @@
+.jumbotron {
+  background-color: #DB7093 !important;
+  color: white !important;
+}
+
+body {
+  background-image: url("http://edge.alluremedia.com.au/m/l/2016/03/rubik.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #CD853F !important;*/
+  color: white !important;
+}
+#result {
+  display: none;
+  background-color: #87CECA;
+  color: white;
+}

@@ -49,12 +49,15 @@ $(function(){
   $("#blank").submit(function(event) {
     event.preventDefault();
     var input = $("#input").val();
+    var encodedArray;
 
     var cleanedString = removeSpecial(input);
     var squareSize = arraySquareSize(cleanedString);
     var fullLength = cleanedString.length;
+    encodedArray = setupArray(cleanedString, squareSize, fullLength);
 
-
-    $("#output").text(setupArray(cleanedString, squareSize, fullLength));
+    $("#not-encrypted").text(input);
+    $("#output").text(encodedArray);
+    $("#result").fadeIn();
   })
 });
